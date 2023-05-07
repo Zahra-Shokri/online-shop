@@ -5,6 +5,7 @@ import Header from './components/Header';
 import HomePage from './components/HomePage';
 import Products from './components/Products';
 import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 
 import './App.css';
@@ -17,6 +18,7 @@ const App = () => {
       <Switch>
         <Route path='/products' component={Products} />
         <Route exact path='/aboutus' component={AboutUs}/>
+        <Route path='/contactus' render={(props) => <ContactUs firstName='Zahra' lastName='Shokri' {...props} />} />
         <Route exact path='/' component={HomePage} />
       </Switch>
 
