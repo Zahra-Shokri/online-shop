@@ -6,6 +6,7 @@ import HomePage from './components/HomePage';
 import Products from './components/Products';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
+import SignUp from './components/SignUp';
 import Footer from './components/Footer';
 
 import './App.css';
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/products' component={Products} />
         <Route exact path='/aboutus' component={AboutUs}/>
         <Route path='/contactus' render={(props) => <ContactUs firstName='Zahra' lastName='Shokri' {...props} />} />
+        <Route path='/signup' component={SignUp} />
         <Route exact path='/' component={HomePage} />
       </Switch>
 
