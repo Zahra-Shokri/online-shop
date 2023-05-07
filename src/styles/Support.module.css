@@ -1,0 +1,22 @@
+.container {
+    margin: 55px 0;
+    text-align: center;
+}
+
+.container p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(94, 88, 88);
+}
+
+.imgContent {
+    display: flex;
+    margin: 35px 0;
+    justify-content: space-around;
+}
+
+.container img {
+    width: 250px;
+    border-radius: 5%;
+    box-shadow: 3px 10px 15px rgb(197, 197, 197);
+}
