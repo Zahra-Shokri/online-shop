@@ -5,6 +5,7 @@ import Header from './components/Header';
 import HomePage from './components/HomePage';
 // import Products from './components/Products';
 import NewProducts from './components/NewProducts';
+import ProductDetails from './components/ProductDetails';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import SignUp from './components/SignUp';
@@ -23,6 +24,7 @@ const App = () => {
       <ProductsContext>
         <Switch>
           {/* <Route path='/products' component={Products} /> */}
+          <Route path='/products/:id' component={ProductDetails} />
           <Route path='/products' component={NewProducts} />
           <Route exact path='/aboutus' component={AboutUs}/>
           <Route path='/contactus' render={(props) => <ContactUs firstName='Zahra' lastName='Shokri' {...props} />} />
