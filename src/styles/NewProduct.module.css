@@ -1,0 +1,35 @@
+.container {
+    padding: 10px;
+    margin: 30px 5px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 12px rgb(163, 163, 163);
+}
+
+.container img{
+    width: 230px;
+    height: 220px;
+}
+
+.container h3, p {
+    margin-top: 10px;
+}
+
+.container a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(55, 55, 55);
+}
+
+.btnsLink {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    padding: 15px 10px 5px;
+    border-top: 1px solid silver;
+    justify-content: space-between;
+}
+
+.container button{
+    padding: 2px 5px;
+    /* float: right; */
+}
