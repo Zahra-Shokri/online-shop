@@ -10,7 +10,7 @@ const NewProduct = ({ data }) => {
             <h3> {shorten(data.title)} </h3>
             <p> {data.price} $ </p>
 
-            <div className={styles.btnsLink}>
+            <div className={styles.footerBtns}>
                 <Link to={ `/products/${data.id}` }>Details</Link>
                 <button> Add to Cart </button>
             </div>
