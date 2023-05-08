@@ -11,14 +11,19 @@ const ProductDetails = (props) => {
 
     return (
         <div className={styles.container}>
-            <img src={image} alt='product' />
-            <h2> {title} </h2>
-            <p> {description} </p>
-            <p> Category: {category} </p>
-            <h3> {price} $ </h3>
+            <div className={styles.productDetailPanel}>
+                <img src={image} alt='product' />
+                
+                <div className={styles.productDetailContent}>
+                    <h2> {title} </h2>
+                    <p> {description} </p>
+                    <span> Category: </span> <span> {category} </span>
 
-            <div className={styles.btnLink}>
-                <Link to='/products'> Back to Shop </Link>
+                    <div className={styles.footerBtns}>
+                        <p> {price} $ </p>
+                        <Link to='/products'> Back to Shop </Link>
+                    </div>
+                </div>
             </div>
         </div>
     );
