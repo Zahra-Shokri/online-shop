@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import userProfile from '../images/icon/user.png';
+import shoppingCart from '../images/icon/shoppingCart.png';
 
 const Div = styled.div`
     display: flex;
@@ -10,7 +11,7 @@ const Div = styled.div`
     justify-content: space-between;
     background-color: rgb(190, 190, 190);
 
-    img {
+    img:nth-child(2) {
         width: 45px;
         margin: 0 20px;
         border-radius: 100%;
@@ -45,6 +46,7 @@ const Header = () => {
                 <li> <Link to='/contactus'> ContactUs </Link> </li>
             </Ul>
 
+            <img src={shoppingCart} alt='Shopping Cart' />
             <img src={userProfile} alt='User Profile' />
         </Div>
     );
