@@ -3,7 +3,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Header from './components/shared/Header';
 import HomePage from './components/HomePage';
-import NewProducts from './components/NewProducts';
+import Products from './components/Products';
 import ProductDetails from './components/ProductDetails';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
@@ -24,7 +24,7 @@ const App = () => {
           
           <Switch>
             <Route path='/products/:id' component={ProductDetails} />
-            <Route path='/products' component={NewProducts} />
+            <Route path='/products' component={Products} />
             <Route exact path='/aboutus' component={AboutUs}/>
             <Route path='/contactus' render={(props) => <ContactUs firstName='Zahra' lastName='Shokri' {...props} />} />
             <Route path='/signup' component={SignUp} />
