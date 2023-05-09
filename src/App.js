@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-import Header from './components/Header';
+import Header from './components/shared/Header';
 import HomePage from './components/HomePage';
 import NewProducts from './components/NewProducts';
 import ProductDetails from './components/ProductDetails';
@@ -18,11 +18,10 @@ import './App.css';
 
 const App = () => {
   return (
-    <div>
-      <Header />
-
-      <ProductsContext>
-        <CartContext>
+    <ProductsContext>
+      <CartContext>
+        <Header />
+          
           <Switch>
             <Route path='/products/:id' component={ProductDetails} />
             <Route path='/products' component={NewProducts} />
@@ -34,11 +33,10 @@ const App = () => {
             <Route exact path='/' component={HomePage} />
             <Redirect to='/notfound' from='/*' /> 
           </Switch>
-        </CartContext>
-      </ProductsContext>
 
-      <Footer />
-    </div> 
+        <Footer />
+      </CartContext>
+    </ProductsContext>
   );
 }
 
