@@ -46,7 +46,7 @@ const Header = () => {
             </ul>
 
             <div className={styles.headerImg}>
-                <img src={shoppingCart} className={styles.shoppingCartImg} alt='Shopping Cart' />
+                <Link to='shopcartlist'> <img src={shoppingCart} className={styles.shoppingCartImg} alt='Shopping Cart' /> </Link>
                 <span className={styles.productQauntity}> {state.itemsCounter} </span>
                 <img src={userProfile} className={styles.userProfileImg} alt='User Profile' />
             </div>
