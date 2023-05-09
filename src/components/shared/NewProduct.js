@@ -29,7 +29,7 @@ const NewProduct = ({ data }) => {
 
                 {
                     (quantityCounter(state, data.id) === 1) && 
-                        <button className={styles2.trashIcn} onClick={() => dispatch({type: 'REMOVE_ITEM', payload: data})}> <img src={trashIcon} alt='Trash Icon' /> </button>                    
+                        <button className={styles2.trashBtn} onClick={() => dispatch({type: 'REMOVE_ITEM', payload: data})}> <img src={trashIcon} alt='Trash Icon' /> </button>                    
                 }
                 {
                     (quantityCounter(state, data.id) > 1) && 
