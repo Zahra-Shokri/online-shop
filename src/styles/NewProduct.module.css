@@ -38,17 +38,14 @@
     justify-content: space-evenly;
 }
 
-.footerBtns button {
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    background-color: rgb(25,103,210);
-}
-
 .footerBtns button:hover {
     cursor: pointer;
 }
 
 .addItemBtn {
+    border: none;
+    color: #fff;
     padding: 5px 8px;
+    border-radius: 5px;
+    background-color: rgb(25,103,210);
 }
