@@ -49,24 +49,6 @@
     cursor: pointer;
 }
 
-.incBtn, .addItemBtn {
+.addItemBtn {
     padding: 5px 8px;
-}
-
-.decBtn {
-    padding: 5px 10px;
-    background-color: rgb(219, 186, 0) !important;
-}
-
-.rmItemBtn{
-    background-color: rgb(255, 50, 50) !important;
-}
-
-.rmItemBtn img {
-    width: 16px;
-    height: 16px;
-    color: #fff;
-    padding: 4px 5px;
-    border-radius: 5px;
-    background-color: rgb(255, 50, 50);
 }
