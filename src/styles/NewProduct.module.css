@@ -1,0 +1,72 @@
+.container {
+    padding: 10px;
+    margin: 30px 5px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 12px rgb(163, 163, 163);
+}
+
+.container img{
+    width: 230px;
+    height: 220px;
+}
+
+.container h3, p {
+    margin-top: 10px;
+}
+
+.container p {
+    color: #fff;
+    padding: 3px 6px;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: rgb(0, 184, 0);
+}
+
+.container a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(55, 55, 55);
+}
+
+.footerBtns {
+    height: 20px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    padding: 15px 10px 5px;
+    border-top: 1px solid silver;
+    justify-content: space-evenly;
+}
+
+.footerBtns button {
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgb(25,103,210);
+}
+
+.footerBtns button:hover {
+    cursor: pointer;
+}
+
+.incBtn, .addItemBtn {
+    padding: 5px 8px;
+}
+
+.decBtn {
+    padding: 5px 10px;
+    background-color: rgb(219, 186, 0) !important;
+}
+
+.rmItemBtn{
+    background-color: rgb(255, 50, 50) !important;
+}
+
+.rmItemBtn img {
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    padding: 4px 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 50, 50);
+}
