@@ -2,10 +2,10 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContextProvider } from '../../context/CartContext';
 import { shorten, isInCart, quantityCounter } from '../../functions/allFUNs';
-import styles from '../../styles/NewProduct.module.css';
+import styles from '../../styles/Product.module.css';
 import trashIcon from '../../images/icon/trash.svg';
 
-const NewProduct = ({ data }) => {
+const Product = ({ data }) => {
     const {state, dispatch} = useContext(CartContextProvider);
     
     return(
@@ -36,4 +36,4 @@ const NewProduct = ({ data }) => {
     );
 }
 
-export default NewProduct;
+export default Product;

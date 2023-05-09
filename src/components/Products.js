@@ -1,17 +1,17 @@
 import React, { useContext } from 'react';
-import NewProduct from './shared/NewProduct';
-import styles from '../styles/NewProducts.module.css';
+import Product from './shared/Product';
+import styles from '../styles/Products.module.css';
 
 import { ProductsContextProvider } from '../context/ProductsContext';
 
-const NewProducts = () => {
+const Products = () => {
     const productsData = useContext(ProductsContextProvider);
     
     return(
         <div className={styles.container}>
-            { productsData.map(product => <NewProduct key={product.id} data={product} />) }
+            { productsData.map(product => <Product key={product.id} data={product} />) }
         </div>
     );
 }
 
-export default NewProducts;
+export default Products;
