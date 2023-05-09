@@ -3,3 +3,4 @@ export const shorten = (title) => {
 
     return `${newTitle[0]} ${newTitle[1]}`
 }
+
