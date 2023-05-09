@@ -56,9 +56,9 @@ const CartContext = () => {
     const [state, dispatch] = useReducer(cartReducer, initialState);
 
     return(
-        <CartContextProvider value={{state, dispatch}}>
+        <CartContextProvider.Provider value={{state, dispatch}}>
             { this.props.children }
-        </CartContextProvider>
+        </CartContextProvider.Provider>
     );
 }
 
