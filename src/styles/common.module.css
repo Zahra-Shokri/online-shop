@@ -1,5 +1,12 @@
-.incBtn {
+.incBtn, .decBtn, .trashBtn, .buyMoreBtn {
+    border: none;
+    color: #fff;
     padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.incBtn, .buyMoreBtn {
+    background-color: rgb(25,103,210);
 }
 
 .decBtn {
@@ -7,15 +14,15 @@
     background-color: rgb(219, 186, 0) !important;
 }
 
-.rmItemBtn {
-    background-color: rgb(255, 50, 50) !important;
+.trashBtn {
+    padding: 4px 5px;
+    background-color: rgb(255, 50, 50);
 }
 
-.trashIcn img {
+.trashBtn img {
     width: 16px;
     height: 16px;
     color: #fff;
-    padding: 4px 5px;
     border-radius: 5px;
     background-color: rgb(255, 50, 50);
 }
