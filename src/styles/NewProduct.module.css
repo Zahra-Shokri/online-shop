@@ -10,11 +10,11 @@
     height: 220px;
 }
 
-.container h3, p {
+.container h3, .productPrice {
     margin-top: 10px;
 }
 
-.container p {
+.container .productPrice {
     color: #fff;
     padding: 3px 6px;
     width: fit-content;

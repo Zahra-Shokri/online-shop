@@ -22,7 +22,7 @@ const NewProduct = ({ data }) => {
         <div className={styles.container}>
             <img src={data.image} alt='products' />
             <h3> {shorten(data.title)} </h3>
-            <p> {data.price} $ </p>
+            <p className={styles.productPrice}> {data.price} $ </p>
 
             <div className={styles.footerBtns}>
                 <Link to={ `/products/${data.id}` }>Details</Link>
