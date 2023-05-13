@@ -42,6 +42,10 @@
     cursor: pointer;
 }
 
+.counter {
+    color: rgb(25,103,210);
+}
+
 .addItemBtn {
     border: none;
     color: #fff;

@@ -37,6 +37,10 @@ const NewProduct = ({ data }) => {
                 }
 
                 {
+                    (quantityCounter(state, data.id) > 0) && <p className={styles.counter}> {quantityCounter(state, data.id)} </p>
+                }
+
+                {
                     (isInCart(state, data.id))?
                         <button className={styles2.incBtn} onClick={() => dispatch({type: 'INCREASE', payload: data})}> + </button> : 
                         <button className={styles.addItemBtn} onClick={() => dispatch({type: 'ADD_ITEM', payload: data})}> Add to Cart </button> 
