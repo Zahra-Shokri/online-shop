@@ -1,11 +1,11 @@
-.incBtn, .decBtn, .trashBtn, .buyMoreBtn {
+.incBtn, .decBtn, .trashBtn {
     border: none;
     color: #fff;
     padding: 5px 8px;
     border-radius: 5px;
 }
 
-.incBtn, .buyMoreBtn {
+.incBtn {
     background-color: rgb(25,103,210);
 }
 
