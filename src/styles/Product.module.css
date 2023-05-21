@@ -10,11 +10,11 @@
     height: 220px;
 }
 
-.container h3, .productPrice {
+.container h3, p {
     margin-top: 10px;
 }
 
-.container .productPrice {
+.container p {
     color: #fff;
     padding: 3px 6px;
     width: fit-content;
@@ -38,18 +38,35 @@
     justify-content: space-evenly;
 }
 
+.footerBtns button {
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgb(25,103,210);
+}
+
 .footerBtns button:hover {
     cursor: pointer;
 }
 
-.counter {
-    color: rgb(25,103,210);
+.incBtn, .addItemBtn {
+    padding: 5px 8px;
 }
 
-.addItemBtn {
-    border: none;
+.decBtn {
+    padding: 5px 10px;
+    background-color: rgb(219, 186, 0) !important;
+}
+
+.rmItemBtn{
+    background-color: rgb(255, 50, 50) !important;
+}
+
+.rmItemBtn img {
+    width: 16px;
+    height: 16px;
     color: #fff;
-    padding: 5px 8px;
+    padding: 4px 5px;
     border-radius: 5px;
-    background-color: rgb(25,103,210);
+    background-color: rgb(255, 50, 50);
 }

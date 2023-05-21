@@ -1,0 +1,28 @@
+.incBtn, .decBtn, .trashBtn {
+    border: none;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.incBtn {
+    background-color: rgb(25,103,210);
+}
+
+.decBtn {
+    padding: 5px 10px;
+    background-color: rgb(219, 186, 0) !important;
+}
+
+.trashBtn {
+    padding: 4px 5px;
+    background-color: rgb(255, 50, 50);
+}
+
+.trashBtn img {
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgb(255, 50, 50);
+}
