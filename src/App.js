@@ -27,8 +27,8 @@ const App = () => {
             <Route path='/products/:id' component={ProductDetails} />
             <Route path='/shopcartlist' component={ShopCartList} />
             <Route path='/products' component={NewProducts} />
-            <Route exact path='/aboutus' component={AboutUs}/>
-            <Route path='/contactus' render={(props) => <ContactUs firstName='Zahra' lastName='Shokri' {...props} />} />
+            <Route exact path='/aboutus' render={(props) => <AboutUs firstName='Zahra' lastName='Shokri' {...props} />}/>
+            <Route path='/contactus' component={ContactUs} />
             <Route path='/signup' component={SignUp} />
             <Route path='/login' component={Login} />
             <Route path='/notfound' component={NotFound} />

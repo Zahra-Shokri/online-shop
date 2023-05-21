@@ -1,9 +1,10 @@
 import React from 'react';
 
-const AboutUs = () => {
+const AboutUs = (props) => {
     return (
-        <div style={{minHeight: '100vh'}}>
-            <h2> AboutUs </h2>
+        <div style={{minHeight: '100vh', padding: '15px'}}>
+            <h1> AboutUs </h1>
+            <h3 style={{marginTop: '20px'}}> This site is created by {props.firstName} {props.lastName} </h3>
         </div>
     );
 }
