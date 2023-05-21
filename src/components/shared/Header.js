@@ -48,7 +48,7 @@ const Header = () => {
             <div className={styles.headerImg}>
                 <Link to='shopcartlist'> <img src={shoppingCart} className={styles.shoppingCartImg} alt='Shopping Cart' /> </Link>
                 <span className={styles.productQauntity}> {state.itemsCounter} </span>
-                <img src={userProfile} className={styles.userProfileImg} alt='User Profile' />
+                <Link to='signup'> <img src={userProfile} className={styles.userProfileImg} alt='User Profile' /> </Link>
             </div>
         </div>
     );
