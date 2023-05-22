@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import useTitle from '../hooks/useTitle.js';
+
 
 // Context
 import { CartContextProvider } from '../context/CartContext';
@@ -12,6 +14,8 @@ import styles from '../styles/ShopCartList.module.css';
 
 
 const ShopCartList = () => {
+    useTitle('Shop Cart Page');
+
     const {state, dispatch} = useContext(CartContextProvider);
     
     return(

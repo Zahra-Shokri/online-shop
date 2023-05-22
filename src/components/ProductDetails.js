@@ -1,9 +1,17 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import useTitle from '../hooks/useTitle.js';
+
+// Context
 import { ProductsContextProvider } from '../context/ProductsContext';
+
+// Styles
 import styles from '../styles/ProductDetails.module.css';
 
+
 const ProductDetails = (props) => {
+    useTitle('Product Details Page');
+
     const id = props.match.params.id;
     const data = useContext(ProductsContextProvider);
     const productData = data[id - 1];
