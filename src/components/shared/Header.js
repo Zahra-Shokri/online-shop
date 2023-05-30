@@ -32,9 +32,8 @@ import shoppingCart from '../../images/icon/shoppingCart.png';
 //     }
 // `;
 
-
 const Header = () => {
-    const {state} = useContext(CartContextProvider);
+    const { state } = useContext(CartContextProvider);
 
     return(
         <div className={styles.container}>
@@ -42,7 +41,7 @@ const Header = () => {
                 <li> <Link to='/'> Home Page </Link> </li>
                 <li> <Link to='/products'> Products </Link> </li>
                 <li> <Link to='/aboutus'> About Us </Link> </li>
-                <li> <Link to='/contactus'> ContactUs </Link> </li>
+                <li> <Link to='/contactus'> Contact Us </Link> </li>
             </ul>
 
             <div className={styles.headerImg}>
@@ -51,7 +50,7 @@ const Header = () => {
                 <Link to='signup'> <img src={userProfile} className={styles.userProfileImg} alt='User Profile' /> </Link>
             </div>
         </div>
-    );
+    )
 }
 
 export default Header;
